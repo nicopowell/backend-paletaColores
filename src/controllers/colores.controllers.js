@@ -33,3 +33,15 @@ export const obtenerColores = async (req, res) => {
         });
     }
 };
+
+export const obtenerColor = async (req, res) => {
+    try {
+        const color = await Color.findById(req.params.id);
+        res.status(200).json(color);
+    } catch (error) {
+        console.log(error);
+        res.status(404).json({
+            mensaje: "Error al intentar obtener el color",
+        });
+    }
+};
