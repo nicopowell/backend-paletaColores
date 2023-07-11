@@ -1,14 +1,14 @@
 {
-  "name": "todolist-backend",
+  "name": "colores-backend",
   "version": "1.0.0",
-  "description": "Backend del ejercicio To Do List",
+  "description": "Paleta de colores",
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
     "dev": "nodemon --exec babel-node index.js"
   },
   "keywords": [
-    "To do List"
+    "Paleta de colores"
   ],
   "author": "Nicolas Powell",
   "license": "ISC",
