@@ -1,10 +1,10 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import validarTarea from "../helpers/validarTarea";
+import validarColor from "../helpers/validarColor";
+import { crearColor, obtenerColores } from "../controllers/colores.controllers";
 
 const router = Router();
 
-router.route("/").get().post()
-router.route("/:id").get().delete().put()
+router.route("/").get(obtenerColores).post(validarColor ,crearColor)
 
 export default router

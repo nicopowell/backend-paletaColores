@@ -17,4 +17,4 @@ const colorSchema = new Schema({
 
 const Color = mongoose.model("color", colorSchema)
 
-export default Tarea
+export default Color
