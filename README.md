@@ -40,7 +40,7 @@ npm run dev
 ```
 
 ## Repositorio Backend
-[Frontend]([https://github.com/nicopowell/backend-todolist](https://github.com/nicopowell/frontend-paletaColores)
+[Frontend](https://github.com/nicopowell/frontend-paletaColores)
 ## Autor
 
 1. [Nicolas Powell](https://github.com/nicopowell)
