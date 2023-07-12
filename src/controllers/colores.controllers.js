@@ -45,3 +45,31 @@ export const obtenerColor = async (req, res) => {
         });
     }
 };
+
+export const borrarColor = async (req, res) => {
+    try {
+        await Color.findByIdAndDelete(req.params.id);
+        res.status(200).json({
+            mensaje: "El color fue eliminado correctamente",
+        });
+    } catch (error) {
+        console.log(error);
+        res.status(404).json({
+            mensaje: "Error, no se pudo borrar el color",
+        });
+    }
+};
+
+export const editarColor = async (req, res) => {
+    try {
+        await Color.findByIdAndUpdate(req.params.id, req.body);
+        res.status(200).json({
+            mensaje: "El color fue actualizada correctamente",
+        });
+    } catch (error) {
+        console.log(error);
+        res.status(404).json({
+            mensaje: "Error, no se pudo borrar el producto",
+        });
+    }
+};
